@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Family tree</title>
+    <link rel="stylesheet" href="pg5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="pg5.php">
+    <script src="pg5.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            
+            <div class="topnav">
+                <div id = "myLinks">
+                <a  href="home.html">Home</a>
+                <a   href="Mother'sside.html">Mother's side</a>
+                <a  href="Father'sside.html">Father's side</a>
+                <a class="active" href="Familygallery.html"> family Gallery</a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---wrapper-->
+        <div class="w3-container">
+
+            <h2> contact Us</h2>
+            <p>Frequantly asked questions</p>
+            
+            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-light-grey w3-left-align" >contact form<i class='fas fa-plus' style="margin-inline-start: 92%;"></i></button>
+            <div id="Demo1" class="w3-hide w3-container" style="color: cadetblue;">
+                <form action="GET">
+                    <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname" value="Doe"><br>
+                  <textarea name="message" id="msgbox" cols="30" rows="10">Message</textarea> <br>
+                  <input type="submit" value="Submit">
+                  
+                  
+                </fieldset>
+                </form>
+            </div>
+            
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-light-grey w3-left-align">Upload Image<i class='fas fa-plus' style="margin-inline-start: 91%;"></i></button>
+            <div id="Demo2" class="w3-hide w3-container">
+                <div id="regFormContainer" class="bar-colors-borders">
+                    <form action="uploadImages.php" method="post" onsubmit="return validateUploadFile();" enctype="multipart/form-data" >
+                        <p><input type="hidden" name="MAX_FILE_SIZE" value="100000" /></p>
+                        <h2 style="color: white; font-family: mySixthFont;">To request an update of the image in the family gallery insert your image below</h2>
+                        <div class="uploadFileprompt">
+                            <div class="span_left">File 1 to upload - Max. 100kb</div>
+                            <div class="span_right"><input type="file" name="txtUploadFile[]"  /></div>
+                            
+                        </div>
+                        <div class="uploadFileprompt">
+                            <div class="span_left">File 2 to upload - Max. 100kb</div>
+                            <div class="span_right"><input type="file" name="txtUploadFile[]"  /></div>
+                        </div>
+                        <input type="submit">
+                    </form>
+</div>
+            </div>
+            
+            </div>
+
+        <div id="footer">
+            <p>Twitter<a href="https://twitter.com/?lang=en-gb" class='fas fa-dove'></a>
+                instagram <a href="https://www.instagram.com/" class="fas fa-camera"></a>
+                Facebook <a href="https://en-gb.facebook.com/" class="far fa-thumbs-up"></a>
+                contactUs <a href="contactUS.html" class='far fa-comment-alt'></a></p>
+        </div>
+        <!-- /#footer -->
+    </div>
+    <!-- /#wrapper -->
+</body>
+
+</html>
