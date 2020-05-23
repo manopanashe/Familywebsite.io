@@ -43,14 +43,19 @@
             
             <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-light-grey w3-left-align" >contact form<i class='fas fa-plus' style="margin-inline-start: 92%;"></i></button>
             <div id="Demo1" class="w3-hide w3-container" style="color: cadetblue;">
-                <form action="https://google.com" id="contact-form" method="get">
+                <form action="https://www.google.co.uk/" id="contact-form" method="get">
                     <fieldset>
                     <legend>Contact Form</legend>
-                    <label for="fname">First name:</label>
-                  <input type="text" id="fname" name="fname" value="John"><br>
-                  <label for="lname">Last name:</label>
-                  <input type="text" id="lname" name="lname" value="Doe"><br>
-                  <textarea name="message" id="msgbox" cols="30" rows="10">Message</textarea> <br>
+                  <input type="text" id="fname" name="fname" value="First Name" required><br>
+                  <input type="text" id="lname" name="lname" value="Last Name" required><br>
+                  <input type="text" id="email" value="Email"><br>
+                 <select name="familyside" id="familyside" >
+                 <option value=""> select Family side</option>
+                 <option value="Mother'sside">Mother's side</option>
+                 <option value="Father's'side">Father's side</option>
+                </select><br>
+                  
+                  <textarea name="message" id="msgbox" cols="30" rows="5">Message</textarea> <br>
                   <input type="submit" value="Submit">
                   
                   
@@ -80,12 +85,14 @@
             
             </div>
 
-        <div id="footer">
-            <p>Twitter<a href="https://twitter.com/?lang=en-gb" class='fas fa-dove'></a>
-                instagram <a href="https://www.instagram.com/" class="fas fa-camera"></a>
-                Facebook <a href="https://en-gb.facebook.com/" class="far fa-thumbs-up"></a>
-                contactUs <a href="contactUS.html" class='far fa-comment-alt'></a></p>
-        </div>
+            <div id="footer">
+                <p>Twitter<a href="https://twitter.com/?lang=en-gb" class='fas fa-dove'></a>
+                    instagram <a href="https://www.instagram.com/" class="fas fa-camera"></a>
+                    Facebook <a href="https://en-gb.facebook.com/" class="far fa-thumbs-up"></a>
+                    contactUs <a href="contactUS.html" class='far fa-comment-alt'></a>
+                    Privacy Policy <a href="PrivacyPolicy.html" class='far fa-comment-alt'></a>
+                </p>
+            </div>
         <!-- /#footer -->
     </div>
     <!-- /#wrapper -->

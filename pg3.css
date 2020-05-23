@@ -184,14 +184,16 @@
        .content p{
          color:#283130;
          font-weight: bolder;
-         
+         font-size: 20px;
        }
       
      
-      td, th {
+       td, th {
         border: 1px solid #dddddd;
         text-align: left;
         padding: 8px;
+        font-weight: bolder;
+         font-size: 20px;
       }
       
       tr:nth-child(even) {

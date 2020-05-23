@@ -3,7 +3,7 @@
     box-sizing: border-box;
   }
   body{
-    font-family: mySixthFont;
+    font-family: myThirdFont;
     color: aliceblue;
     background-image: url("tree3.jpg");
     background-repeat:  no-repeat;
@@ -70,7 +70,6 @@
   .topnav .search-container button:hover {
     background: #ccc;
   }
-  
   @font-face {
     font-family: myFirstFont;
     src: url(pecita.book.otf);
@@ -85,49 +84,7 @@
     font-family: mySixthFont;
     src: url(ReenieBeanie-Regular.ttf);
    }
-
-   .row {
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 10px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    font-size: 18px;
     
-  }
-  
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-  #contact-form{
-  width: 100%;
-  }
       #footer{
          
           margin-top: 1%;
@@ -162,4 +119,9 @@
     .topnav input[type=text] {
       border: 1px solid #ccc;  
     }
+    .timeline::after {
+      left: 31px;
+      }
+      
+     
   }

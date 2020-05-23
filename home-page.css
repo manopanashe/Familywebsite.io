@@ -158,6 +158,7 @@
   .text-block h2{
    font-family: myFirstFont;
    font-size: 23px;
+   display: inline;
   }
   .text-block p{
   font-family: myFirstFont;
